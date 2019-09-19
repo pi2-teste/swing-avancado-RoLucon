@@ -5,10 +5,79 @@
  */
 package br.senac.sp.aula5;
 
+import java.util.Arrays;
+
 /**
  *
  * @author seunome.sobrenome
  */
 public class Computador {
+        private static String fabricante = "Rogerio Lucon";
+        private String tipoComputador, sistemaOperacional, HD; 
+        private String[] acessorios, servicos;
+        
+    public Computador() {
+        
+    }
+
+    public Computador(String tipoComputador, String sistemaOperacional,
+            String HD, String[] acessorios, String[] serviços) {
+        this.tipoComputador = tipoComputador;
+        this.sistemaOperacional = sistemaOperacional;
+        this.HD = HD;
+        this.acessorios = acessorios;
+        this.servicos = serviços;
+    }
+    
+    public static String getFabricante() {
+        return fabricante;
+    }
+
+    public static void setFabricante(String fabricante) {
+        Computador.fabricante = fabricante;
+    }
+
+    public String getTipoComputador() {
+        return tipoComputador;
+    }
+
+    public void setTipoComputador(String tipoComputador) {
+        this.tipoComputador = tipoComputador;
+    }
+
+    public String getSistemaOperacional() {
+        return sistemaOperacional;
+    }
+
+    public void setSistemaOperacional(String sistemaOperacional) {
+        this.sistemaOperacional = sistemaOperacional;
+    }
+
+    public String getHD() {
+        return HD;
+    }
+
+    public void setHD(String HD) {
+        this.HD = HD;
+    }
+
+    public String[] getAcessorios() {
+        return acessorios;
+    }
+
+    public void setAcessorios(String[] acessorios) {
+        this.acessorios = acessorios;
+    }
+
+    public String[] getServiços() {
+        return servicos;
+    }
+
+    public void setServiços(String[] serviços) {
+        this.servicos = serviços;
+    }
+    
+    
+        
         
 }
