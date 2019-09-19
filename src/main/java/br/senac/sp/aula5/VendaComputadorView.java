@@ -340,6 +340,10 @@ public class VendaComputadorView extends javax.swing.JFrame {
         if(novoCliente == null){
             novoCliente = new CadastroClienteView();
             novoCliente.setVisible(true);
+        }else{
+            if(!novoCliente.isActive()){
+                novoCliente.setVisible(true);
+            }
         }
     }//GEN-LAST:event_menuItemClientActionPerformed
 
